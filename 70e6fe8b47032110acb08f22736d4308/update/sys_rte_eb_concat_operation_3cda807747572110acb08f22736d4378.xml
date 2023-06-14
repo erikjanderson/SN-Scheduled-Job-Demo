@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_concat_operation">
+    <sys_rte_eb_concat_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <joining_string>|||</joining_string>
+        <name>Concatenation - network_id_unique,ip</name>
+        <operation_group/>
+        <order>200</order>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields>0ebacc3747572110acb08f22736d432b,4d3a483747572110acb08f22736d4310</source_sys_rte_eb_fields>
+        <sys_class_name>sys_rte_eb_concat_operation</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-14 17:53:57</sys_created_on>
+        <sys_id>3cda807747572110acb08f22736d4378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Concatenation - network_id_unique,ip</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example Nested Payload">dc3ac43747572110acb08f22736d432e</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp.network_adapters[*].ip_addresses[*]">743a083747572110acb08f22736d43ef</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_concat_operation_3cda807747572110acb08f22736d4378</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-14 17:53:57</sys_updated_on>
+        <target_sys_rte_eb_field display_value="ip_address_id_unique">f0da807747572110acb08f22736d4376</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Concatenation">4e38102a73b333002b6265a751ab9e1f</type>
+    </sys_rte_eb_concat_operation>
+</record_update>

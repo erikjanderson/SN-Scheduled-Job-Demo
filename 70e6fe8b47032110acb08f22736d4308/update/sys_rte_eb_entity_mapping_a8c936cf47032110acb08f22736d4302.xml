@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE">
+        <condition_script><![CDATA[/* Example Script  (function() {          //step1: access the input variables         if (input && input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>false</is_conditional>
+        <name>temp.network_interfaces[*]ToNetwork Adapter 2</name>
+        <order>140</order>
+        <source_sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-05-31 12:27:06</sys_created_on>
+        <sys_id>a8c936cf47032110acb08f22736d4302</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>temp.network_interfaces[*]ToNetwork Adapter 2</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_a8c936cf47032110acb08f22736d4302</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-05-31 12:30:19</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Network Adapter 2">e0c936cf47032110acb08f22736d4300</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+</record_update>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE">
+        <condition_script><![CDATA[(function(input, failingPaths) {
+//input.temp.network_adapters= [];
+    for (var network_adapters_0 = 0; network_adapters_0 < input.temp.network_adapters.length; network_adapters_0++) {
+        if (!(input.temp.network_adapters[network_adapters_0].mac)) {
+            gs.info('HERE:::: ');
+            failingPaths.push('temp.network_adapters[' + network_adapters_0 + ']');
+        }
+    }
+    return true;
+})(input, failingPaths);]]></condition_script>
+        <encoded_query>temp#network_adapters[*]#macISNOTEMPTY</encoded_query>
+        <entity_mapping_group>beeb8c7747572110acb08f22736d4394</entity_mapping_group>
+        <ignore>false</ignore>
+        <is_conditional>true</is_conditional>
+        <name>temp.network_adapters[*]ToNetwork Adapter 1</name>
+        <order>140</order>
+        <source_sys_rte_eb_entity display_value="temp.network_adapters[*]">f83a083747572110acb08f22736d43c5</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-06-14 17:58:43</sys_created_on>
+        <sys_id>72eb08b747572110acb08f22736d438d</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>temp.network_adapters[*]ToNetwork Adapter 1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example Nested Payload">dc3ac43747572110acb08f22736d432e</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_72eb08b747572110acb08f22736d438d</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-06-14 18:35:39</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Network Adapter 1">32eb8c7747572110acb08f22736d4395</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+</record_update>

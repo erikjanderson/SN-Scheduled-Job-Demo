@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Staging: Nested Payload Import" language="en" table="x_156954_sch_job_d_staging_nested_payload_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Staging: Nested Payload Import</label>
+            <language>en</language>
+            <name>x_156954_sch_job_d_staging_nested_payload_import</name>
+            <plural>Staging: Nested Payload Imports</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>erik.anderson</sys_created_by>
+            <sys_created_on>2023-06-14 17:18:36</sys_created_on>
+            <sys_id>0bb2407f47172110acb08f22736d43cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Staging: Nested Payload Import</sys_name>
+            <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+            <sys_update_name>sys_documentation_x_156954_sch_job_d_staging_nested_payload_import__en</sys_update_name>
+            <sys_updated_by>erik.anderson</sys_updated_by>
+            <sys_updated_on>2023-06-14 17:18:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
