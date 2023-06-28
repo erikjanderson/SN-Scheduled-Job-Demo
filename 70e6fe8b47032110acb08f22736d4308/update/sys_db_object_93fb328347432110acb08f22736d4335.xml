@@ -19,7 +19,7 @@
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Import Set Row" name="sys_import_set_row">a5efc2e0f90211108c8bd16244dfe716</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:37:42</sys_created_on>
         <sys_id>93fb328347432110acb08f22736d4335</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -28,7 +28,7 @@
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_db_object_93fb328347432110acb08f22736d4335</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-31 12:37:42</sys_updated_on>
         <update_access>false</update_access>
         <user_role/>

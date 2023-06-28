@@ -3,18 +3,18 @@
         <field>serial_number_ip_address_cleansed_1</field>
         <name>serial_number_ip_address_cleansed_1</name>
         <sys_class_name>sys_rte_eb_field</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:27:58</sys_created_on>
         <sys_id>41f9b6cf47032110acb08f22736d430a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>serial_number_ip_address_cleansed_1</sys_name>
         <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
         <sys_policy/>
-        <sys_rte_eb_definition display_value="Example RTE Import">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
         <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_rte_eb_field_41f9b6cf47032110acb08f22736d430a</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-31 12:27:58</sys_updated_on>
     </sys_rte_eb_field>
 </record_update>

@@ -50,7 +50,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:37:42</sys_created_on>
         <sys_id>ef2c768347432110acb08f22736d431e</sys_id>
         <sys_name>x_156954_sch_job_d_staging_bulk_data_import</sys_name>
@@ -58,8 +58,8 @@
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_dictionary_x_156954_sch_job_d_staging_bulk_data_import_null</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-06-14 11:43:35</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-22 09:48:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
