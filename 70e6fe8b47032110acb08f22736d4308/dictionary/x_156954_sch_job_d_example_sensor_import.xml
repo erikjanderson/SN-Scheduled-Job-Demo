@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8c27760b47edb510acb08f22736d4345" extends="sys_import_set_row" label="Example Sensor Import" max_length="40" name="x_156954_sch_job_d_example_sensor_import" type="collection">
+        <element label="data" max_length="10000" name="u_data" type="json"/>
+    </element>
+</database>
