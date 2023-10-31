@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f332ec8a47397110acb08f22736d4365" label="Hardware Unrelated Table" max_length="40" name="x_156954_sch_job_d_hardware_unrelated_table" type="collection">
+        <element label="Hardware" max_length="32" name="u_hardware" reference="cmdb_ci" type="reference"/>
+        <element label="Name" max_length="100" name="u_name" type="string"/>
+        <element label="Unrelated table" max_length="32" name="u_unrelated_table" reference="x_156954_sch_job_d_unrelated_table" type="reference"/>
+        <index name="index">
+            <element name="u_hardware"/>
+        </index>
+        <index name="index2">
+            <element name="u_name"/>
+        </index>
+        <index name="index3">
+            <element name="u_unrelated_table"/>
+        </index>
+    </element>
+</database>

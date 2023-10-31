@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_script_operation">
+    <sys_rte_eb_script_operation action="DELETE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>Script Operation - serial_number_mac_cleansed_1</name>
+        <operation_group/>
+        <order>900</order>
+        <script><![CDATA[(function(batch, output) {
+   for (var i = 0; i < batch.length; i++) {
+      var input = batch[i].input; // Value of the input column.
+
+      output[i] = input + '_again'
+   }
+})(batch, output);]]></script>
+        <source_sys_rte_eb_field display_value="serial_number_mac_cleansed_1">ba0a3acf47032110acb08f22736d4308</source_sys_rte_eb_field>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_script_operation</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 16:34:54</sys_created_on>
+        <sys_id>297763b747b5b910acb08f22736d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Script Operation - serial_number_mac_cleansed_1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_script_operation_297763b747b5b910acb08f22736d43b5</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 16:34:54</sys_updated_on>
+        <target_sys_rte_eb_field display_value="serial_number_mac_cleansed_1_again">617763b747b5b910acb08f22736d43b3</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Script Operation">941f88e273b333002b6265a751ab9e84</type>
+        <use_unique_input_sets>true</use_unique_input_sets>
+    </sys_rte_eb_script_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_rte_eb_script_operation_297763b747b5b910acb08f22736d43b5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_script_operation"&gt;&lt;sys_rte_eb_script_operation action="INSERT_OR_UPDATE"&gt;&lt;conditional_fields/&gt;&lt;conditional_script&gt;&lt;![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i &lt; batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]&gt;&lt;/conditional_script&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;Script Operation - serial_number_mac_cleansed_1&lt;/name&gt;&lt;operation_group/&gt;&lt;order&gt;900&lt;/order&gt;&lt;script&gt;&lt;![CDATA[(function(batch, output) {
+   for (var i = 0; i &lt; batch.length; i++) {
+      var input = batch[i].input; // Value of the input column.
+
+      output[i] = input + '_again'
+   }
+})(batch, output);]]&gt;&lt;/script&gt;&lt;source_sys_rte_eb_field display_value="serial_number_mac_cleansed_1"&gt;ba0a3acf47032110acb08f22736d4308&lt;/source_sys_rte_eb_field&gt;&lt;source_sys_rte_eb_fields/&gt;&lt;sys_class_name&gt;sys_rte_eb_script_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erik.anderson&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-17 16:34:54&lt;/sys_created_on&gt;&lt;sys_id&gt;297763b747b5b910acb08f22736d43b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Script Operation - serial_number_mac_cleansed_1&lt;/sys_name&gt;&lt;sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Example RTE Import (Single Column)"&gt;e649f68f47032110acb08f22736d43d2&lt;/sys_rte_eb_definition&gt;&lt;sys_rte_eb_entity display_value="temp.network_interfaces[*]"&gt;9749ba8f47032110acb08f22736d43d2&lt;/sys_rte_eb_entity&gt;&lt;sys_scope display_value="Scheduled Job Demo"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_script_operation_297763b747b5b910acb08f22736d43b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;erik.anderson&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-17 16:34:54&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_field display_value="serial_number_mac_cleansed_1_again"&gt;617763b747b5b910acb08f22736d43b3&lt;/target_sys_rte_eb_field&gt;&lt;target_sys_rte_eb_fields/&gt;&lt;type display_value="Script Operation"&gt;941f88e273b333002b6265a751ab9e84&lt;/type&gt;&lt;use_unique_input_sets&gt;true&lt;/use_unique_input_sets&gt;&lt;/sys_rte_eb_script_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1886888901</payload_hash>
+        <record_name>Script Operation - serial_number_mac_cleansed_1</record_name>
+        <reverted_from/>
+        <source>b0e6fe8b47032110acb08f22736d430a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 16:34:54</sys_created_on>
+        <sys_id>2d7763b747b5b910acb08f22736d43b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b3e7d80ae0000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 16:34:54</sys_updated_on>
+        <type>RTE Entity Script Operation</type>
+        <update_guid>217763b7f7b5b910aadd716954ba62b7</update_guid>
+        <update_guid_history>217763b7f7b5b910aadd716954ba62b7:1886888901</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 16:44:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_script_operation">sys_rte_eb_script_operation</sys_db_object>
+        <sys_id>2e43803b748b48a0a06138ab5d97da44</sys_id>
+        <sys_metadata>297763b747b5b910acb08f22736d43b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Script Operation - serial_number_mac_cleansed_1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_script_operation_297763b747b5b910acb08f22736d43b5</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_script_operation_297763b747b5b910acb08f22736d43b5">2d7763b747b5b910acb08f22736d43b7</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 16:44:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

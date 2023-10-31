@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-11 13:24:37</sys_created_on>
+        <sys_id>f752c44a47b57110acb08f22736d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NIDSUtils</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_scope_privilege_f752c44a47b57110acb08f22736d439e</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-11 13:24:37</sys_updated_on>
+        <target_name>NIDSUtils</target_name>
+        <target_scope display_value="CMDB CI Class Models">ae99d84b2320330006c0110d96bf65b3</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>
