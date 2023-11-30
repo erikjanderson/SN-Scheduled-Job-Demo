@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/* Example Script  (function() {          //step1: access the input variables         if (input && input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group>7a3b6bfb47b5b910acb08f22736d4388</entity_mapping_group>
+        <ignore>false</ignore>
+        <is_conditional>false</is_conditional>
+        <name>temp.network_interfaces[*]ToNetwork Adapter 1</name>
+        <order>150</order>
+        <source_sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 16:51:22</sys_created_on>
+        <sys_id>763b6bfb47b5b910acb08f22736d438b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>temp.network_interfaces[*]ToNetwork Adapter 1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_763b6bfb47b5b910acb08f22736d438b</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:33:57</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Network Adapter 1">fa3b6bfb47b5b910acb08f22736d4388</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_rte_eb_entity_mapping_763b6bfb47b5b910acb08f22736d438b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/* Example Script  (function() {          //step1: access the input variables         if (input &amp;&amp; input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group&gt;7a3b6bfb47b5b910acb08f22736d4388&lt;/entity_mapping_group&gt;&lt;ignore&gt;false&lt;/ignore&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;temp.network_interfaces[*]ToNetwork Adapter 1&lt;/name&gt;&lt;order&gt;150&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="temp.network_interfaces[*]"&gt;9749ba8f47032110acb08f22736d43d2&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erik.anderson&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-17 16:51:22&lt;/sys_created_on&gt;&lt;sys_id&gt;763b6bfb47b5b910acb08f22736d438b&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;temp.network_interfaces[*]ToNetwork Adapter 1&lt;/sys_name&gt;&lt;sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Example RTE Import (Single Column)"&gt;e649f68f47032110acb08f22736d43d2&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="Scheduled Job Demo"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_763b6bfb47b5b910acb08f22736d438b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;erik.anderson&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-30 17:33:57&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="Network Adapter 1"&gt;fa3b6bfb47b5b910acb08f22736d4388&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>312707136</payload_hash>
+        <record_name>temp.network_interfaces[*]ToNetwork Adapter 1</record_name>
+        <reverted_from/>
+        <source>55449ee4f98211108c8bd16244dfe7ab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-30 17:33:57</sys_created_on>
+        <sys_id>ebea5ac247f2f1d0acb08f22736d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c214b627b0000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:33:57</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>63ea5ac2fff2f1d00fdb596d34d00d5f</update_guid>
+        <update_guid_history>63ea5ac2fff2f1d00fdb596d34d00d5f:312707136,b1bad2c245f2f1d0b1477f3e99a49e67:825277023,da8a9a8236f2f1d06e0986491892ab15:312707136,147b0004944ab9100bba322a4ca60600:-1892242691,3387c0cc4f0ab910769aec6f228dc1ee:312707136,3ed6448c4b0ab910612157f477ba98ad:-1892242691,e5d6848c800ab9108f2dbde9a42ee351:312707136,b92fa33332f5b910aecd81fef0912260:-199862751,41aeaffff0b5b910e270620b16eec114:1890154718,aa5b6ffbcfb5b9107f9709f93f9eaa22:-199862751,434babfbffb5b9105faddb9e965e29f4:-712432638,f23b6bfbf4b5b910ec83b6d334073090:-584380140,ba3b6bfbf4b5b910b9849d12e22eef8c:1979441975</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-30 17:33:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>cc2f8b7016784cf8932070a5336b2184</sys_id>
+        <sys_metadata>763b6bfb47b5b910acb08f22736d438b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>temp.network_interfaces[*]ToNetwork Adapter 1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_763b6bfb47b5b910acb08f22736d438b</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_763b6bfb47b5b910acb08f22736d438b">ebea5ac247f2f1d0acb08f22736d435f</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:33:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

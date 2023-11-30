@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>Hardware Unrelated Table 2</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].x_156954_sch_job_d_hardware_unrelated_table_2</path>
+        <related_for_entity display_value="Network Adapter 1">fa3b6bfb47b5b910acb08f22736d4388</related_for_entity>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 15:42:18</sys_created_on>
+        <sys_id>4f6b97b74775b910acb08f22736d4326</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Hardware Unrelated Table 2</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>cmdb_inst_entity_4f6b97b74775b910acb08f22736d4326</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:55:15</sys_updated_on>
+        <table>x_156954_sch_job_d_hardware_unrelated_table</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>cmdb_inst_entity_4f6b97b74775b910acb08f22736d4326</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity/><name>Hardware Unrelated Table 2</name><parent_entity/><parent_id_field/><path>cmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].x_156954_sch_job_d_hardware_unrelated_table_2</path><related_for_entity display_value="Network Adapter 1">fa3b6bfb47b5b910acb08f22736d4388</related_for_entity><relationship_type/><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-10-17 15:42:18</sys_created_on><sys_id>4f6b97b74775b910acb08f22736d4326</sys_id><sys_mod_count>40</sys_mod_count><sys_name>Hardware Unrelated Table 2</sys_name><sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package><sys_policy/><sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition><sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope><sys_update_name>cmdb_inst_entity_4f6b97b74775b910acb08f22736d4326</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-10-17 18:55:15</sys_updated_on><table>x_156954_sch_job_d_hardware_unrelated_table</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>1382644546</payload_hash>
+        <record_name>Hardware Unrelated Table 2</record_name>
+        <reverted_from/>
+        <source>b0e6fe8b47032110acb08f22736d430a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 18:55:15</sys_created_on>
+        <sys_id>299748cc470ab910acb08f22736d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b3efdfff40000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:55:15</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>ad9748cc2c0ab910b4549ccb980dcc72</update_guid>
+        <update_guid_history>ad9748cc2c0ab910b4549ccb980dcc72:1382644546,a59748cc180ab91066be0fb18ee19970:1839852930,2d9748cc810ab910ec9cfc3cdca2f764:-959699650,6197cc8c2e0ab9108ff3da76ff3c84aa:830060879,3d17c88cb60ab9102cea8d836499cbe5:-190910561,3517c88c260ab910dd3dec0cfb7be5e3:-648118945,a917c88c940ab9107f56411df971c9da:-982736959,e517c88c100ab91079fe41a7400ba2d7:372852495,a3000444b40ab9109ded67e6e8670a16:1382644546,ab000444cb0ab91025946d043d320e13:840214644,6b00cc04970ab910cf0cf7d6ea55766d:-1959337936,2b00cc04760ab9103ccfda5a574ea26a:-169577407,38edbbb39339b9108b560cc52d38bd3e:-244245485,30edbbb3ac39b9101d1978372b60ca3c:298184417,2ced7bb3fd39b910e03590b6190dcae8:-1824610561,e8ed7bb3be39b910577a2db9f015c5e5:372852495,9c7d33b32139b910c4944bebe73b27e1:1382644546,947d33b36539b910a450d7c8d3c45bdf:840214644,187dbf733739b910f4513e3fd076bc1e:-1959337936,d47dbf73d039b9103719dd880635fe1b:-169577407,8e5dbf735439b9108712ea388ca03674:-244245485,865dbf73f539b9106ea3a762d4066072:298184417,865dbf73c839b9106ccab406735e3112:-1824610561,c25dbf738a39b910b9e3f94f47c5de0f:372852495,f83f6b3364f5b910f43bc3836aa3ff1f:1382644546,f03f6b33d6f5b9106d74b83f0cfe021d:840214644,303f2b33b1f5b9107bf382c37172308c:-1959337936,7c3f2b336af5b9102d7403dad4452888:-169577407,27e06f7fea75b91072c36dbb4c1b4ead:-244245485,2fe06f7f2f75b910024eda0e35f57baa:748275409,23e02f7fbd75b910f8377e5ad32fd928:-1374519569,6fe02f7f5075b910a811805efc2bcd24:822943487,ba3f1bfb1175b910aa5964043e839cef:-1178070135,b23f1bfbb575b9103b84d1117a4760ed:2124376267,2a3f1bfbed75b910364f8acaec4648df:-774132615,a63f1bfb8775b9102dddd8a0c0f8bedc:-169577407,302c97f76675b910848bfb09617d3d99:-244245485,b82c97f75775b9103593e8317f458596:868749928,fc2c57f75975b910441a3bad515f6a98:533570822,867b1bb70b75b910fdb693d96846a4ef:2087203094,436bd7b79875b910554b6fd203c909c3:-188252072</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Hardware Unrelated Table 2">979a12c247f2f1d0acb08f22736d4361</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-30 17:32:34</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>83a3cd18293f43988de7d296a81dd440</sys_id>
+        <sys_metadata>4f6b97b74775b910acb08f22736d4326</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware Unrelated Table 2</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_4f6b97b74775b910acb08f22736d4326</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_4f6b97b74775b910acb08f22736d4326">299748cc470ab910acb08f22736d4373</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:32:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

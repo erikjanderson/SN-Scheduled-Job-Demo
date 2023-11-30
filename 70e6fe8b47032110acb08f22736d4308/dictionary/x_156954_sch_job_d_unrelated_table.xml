@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="216e580247f57110acb08f22736d43d6" label="Unrelated Table" max_length="40" name="x_156954_sch_job_d_unrelated_table" type="collection">
-        <element label="Name" max_length="40" name="u_name" type="string"/>
-    </element>
-</database>
