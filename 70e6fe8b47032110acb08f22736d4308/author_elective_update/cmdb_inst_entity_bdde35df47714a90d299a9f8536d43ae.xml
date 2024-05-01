@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>Network Adapter 1</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_ci_network_adapter_1[*]</path>
+        <related_for_entity/>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2024-05-01 15:51:59</sys_created_on>
+        <sys_id>bdde35df47714a90d299a9f8536d43ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Network Adapter 1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>cmdb_inst_entity_bdde35df47714a90d299a9f8536d43ae</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-01 15:52:11</sys_updated_on>
+        <table>cmdb_ci_network_adapter</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>60ddbd8edbd5a190c1a4c5970596190c</instance_id>
+        <instance_name>dev157835</instance_name>
+        <name>cmdb_inst_entity_bdde35df47714a90d299a9f8536d43ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity/><name>Network Adapter 1</name><parent_entity/><parent_id_field/><path>cmdb_ci_network_adapter_1[*]</path><related_for_entity/><relationship_type/><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2024-05-01 15:51:59</sys_created_on><sys_id>bdde35df47714a90d299a9f8536d43ae</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Network Adapter 1</sys_name><sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package><sys_policy/><sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition><sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope><sys_update_name>cmdb_inst_entity_bdde35df47714a90d299a9f8536d43ae</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2024-05-01 15:52:11</sys_updated_on><table>cmdb_ci_network_adapter</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>677421901</payload_hash>
+        <record_name>Network Adapter 1</record_name>
+        <reverted_from/>
+        <source>39588f8347d00610d299a9f8536d43e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2024-05-01 15:52:11</sys_created_on>
+        <sys_id>a8eef5df47714a90d299a9f8536d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f34db30540000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-01 15:52:11</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>eceef5dfd5714a9090557503034833c7</update_guid>
+        <update_guid_history>eceef5dfd5714a9090557503034833c7:677421901,f9def5df91714a90c66d00d47d99ff37:1242111185</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Network Adapter 1">e9a14ed347b14a90d299a9f8536d432f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2024-05-01 16:04:15</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>06a6f4022cb54e8080d23974820a38b1</sys_id>
+        <sys_metadata>bdde35df47714a90d299a9f8536d43ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Adapter 1</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_bdde35df47714a90d299a9f8536d43ae</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_bdde35df47714a90d299a9f8536d43ae">a8eef5df47714a90d299a9f8536d43c8</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-01 16:04:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

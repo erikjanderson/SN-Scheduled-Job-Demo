@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="INSERT_OR_UPDATE">
+        <field>mac_cleansed_ip_cleansed</field>
+        <name>mac_cleansed_ip_cleansed</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2024-05-01 15:56:10</sys_created_on>
+        <sys_id>bacff91347b14a90d299a9f8536d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mac_cleansed_ip_cleansed</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_field_bacff91347b14a90d299a9f8536d4399</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-01 15:56:10</sys_updated_on>
+    </sys_rte_eb_field>
+</record_update>

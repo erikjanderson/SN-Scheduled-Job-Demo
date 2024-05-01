@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmdb_int_util_ci_lookup_operation">
+    <sn_cmdb_int_util_ci_lookup_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>CI Lookup Operation - static_discovery_source,serial_number_mac_cleansed_1,static_sys_id</name>
+        <operation_group/>
+        <order>900</order>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields>ae5ebd9b47714a90d299a9f8536d430b,ba0a3acf47032110acb08f22736d4308,ae7eb19f47714a90d299a9f8536d4367</source_sys_rte_eb_fields>
+        <sys_class_name>sn_cmdb_int_util_ci_lookup_operation</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2024-05-01 15:50:59</sys_created_on>
+        <sys_id>cb9e31df47714a90d299a9f8536d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CI Lookup Operation - static_discovery_source,serial_number_mac_cleansed_1,static_sys_id</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sn_cmdb_int_util_ci_lookup_operation_cb9e31df47714a90d299a9f8536d43f5</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-01 15:50:59</sys_updated_on>
+        <target_sys_rte_eb_field display_value="network_adapter_sys_id">4f9eb99f47714a90d299a9f8536d43ba</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="CI Lookup Operation">32193e9a77821110a52b1bfaae5a9934</type>
+    </sn_cmdb_int_util_ci_lookup_operation>
+</record_update>
