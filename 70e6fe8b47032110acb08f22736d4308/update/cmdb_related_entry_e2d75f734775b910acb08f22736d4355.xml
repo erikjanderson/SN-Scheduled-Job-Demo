@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_related_entry">
+    <cmdb_related_entry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <allow_null_attribute>false</allow_null_attribute>
+        <attributes>u_name</attributes>
+        <condition/>
+        <identifier display_value="cmdb_ci_ip_address">d1623e660f369200a52afa6ce1050ed4</identifier>
+        <order>100</order>
+        <referenced_field>u_hardware</referenced_field>
+        <sys_class_name>cmdb_related_entry</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 15:26:42</sys_created_on>
+        <sys_id>e2d75f734775b910acb08f22736d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>cmdb_related_entry_e2d75f734775b910acb08f22736d4355</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 15:26:42</sys_updated_on>
+        <table>x_156954_sch_job_d_hardware_unrelated_table</table>
+    </cmdb_related_entry>
+</record_update>

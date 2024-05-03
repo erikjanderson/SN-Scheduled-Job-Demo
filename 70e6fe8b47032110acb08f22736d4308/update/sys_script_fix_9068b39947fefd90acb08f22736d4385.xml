@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Import Device Via IRE Script</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var data = {
+	"items": [
+		{
+			"className": "cmdb_ci_computer",
+			"lookup": [],
+			"values": {
+				"name": "Computer ABC",
+				"serial_number": "SNA"
+			},
+			"sys_object_source_info": {
+				"source_name": "SG-Example",
+				"source_native_key": "SNA"
+			}
+		}
+	],
+	"relations": []
+};
+
+//Defaults
+var options = {
+	"deduplicate_payloads": true,
+	"generate_summary": false,
+	"partial_commits": true,
+	"partial_payloads": true,
+	"skip_updating_last_scan_to_now": false,
+	"skip_updating_source_last_discovered_to_now": false
+};
+
+
+var input = JSON.stringify(payload);
+var output = sn_cmdb.IdentificationEngine.createOrUpdateCIEnhanced('SG-Example', input, options);
+
+
+gs.info(JSON.stringify(JSON.parse(output), null, 2));
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-28 16:27:07</sys_created_on>
+        <sys_id>9068b39947fefd90acb08f22736d4385</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Import Device Via IRE Script</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_script_fix_9068b39947fefd90acb08f22736d4385</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-05-02 13:28:58</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

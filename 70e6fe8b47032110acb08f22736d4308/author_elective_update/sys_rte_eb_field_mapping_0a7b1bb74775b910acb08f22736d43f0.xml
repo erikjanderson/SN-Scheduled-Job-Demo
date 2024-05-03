@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="DELETE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="unrelated_table_static_id_mac_cleansed_1">adbad3774775b910acb08f22736d43aa</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 15:42:30</sys_created_on>
+        <sys_id>0a7b1bb74775b910acb08f22736d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="temp.network_interfaces[*]ToHardware Unrelated Table 2">076bd7b74775b910acb08f22736d43c4</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_0a7b1bb74775b910acb08f22736d43f0</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 15:42:30</sys_updated_on>
+        <target_sys_rte_eb_field/>
+    </sys_rte_eb_field_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_rte_eb_field_mapping_0a7b1bb74775b910acb08f22736d43f0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping"><sys_rte_eb_field_mapping action="INSERT_OR_UPDATE"><order>100</order><referenced_sys_rte_eb_entity/><source_sys_rte_eb_field display_value="unrelated_table_static_id_mac_cleansed_1">adbad3774775b910acb08f22736d43aa</source_sys_rte_eb_field><sys_class_name>sys_rte_eb_field_mapping</sys_class_name><sys_created_by>erik.anderson</sys_created_by><sys_created_on>2023-10-17 15:42:30</sys_created_on><sys_id>0a7b1bb74775b910acb08f22736d43f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package><sys_policy/><sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition><sys_rte_eb_entity_mapping display_value="temp.network_interfaces[*]ToHardware Unrelated Table 2">076bd7b74775b910acb08f22736d43c4</sys_rte_eb_entity_mapping><sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope><sys_update_name>sys_rte_eb_field_mapping_0a7b1bb74775b910acb08f22736d43f0</sys_update_name><sys_updated_by>erik.anderson</sys_updated_by><sys_updated_on>2023-10-17 15:42:30</sys_updated_on><target_sys_rte_eb_field/></sys_rte_eb_field_mapping></record_update>]]></payload>
+        <payload_hash>-1795645537</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>55449ee4f98211108c8bd16244dfe7ab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-30 17:32:33</sys_created_on>
+        <sys_id>879ade8247f2f1d0acb08f22736d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c214a19fa0000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:32:33</sys_updated_on>
+        <type>RTE Field Mapping</type>
+        <update_guid>439ade825cf2f1d0a6f3e2003850dc10</update_guid>
+        <update_guid_history>439ade825cf2f1d0a6f3e2003850dc10:0,067b1bb70d75b91057e27acdc7b10ff2:-1609388176</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-11-30 17:32:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field_mapping">sys_rte_eb_field_mapping</sys_db_object>
+        <sys_id>34cbf9758b9e44499f01f3ebd14fe621</sys_id>
+        <sys_metadata>0a7b1bb74775b910acb08f22736d43f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_mapping_0a7b1bb74775b910acb08f22736d43f0</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_mapping_0a7b1bb74775b910acb08f22736d43f0">879ade8247f2f1d0acb08f22736d4310</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:32:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

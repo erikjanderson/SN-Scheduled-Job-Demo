@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3047b60f47032110acb08f22736d43a0" extends="sys_import_set_row" label="Staging: Example Data Import (Single Column)" max_length="40" name="x_156954_sch_job_d_staging_example_data_import" type="collection">
+        <element label="data" max_length="5000" name="u_data" type="json"/>
+    </element>
+</database>

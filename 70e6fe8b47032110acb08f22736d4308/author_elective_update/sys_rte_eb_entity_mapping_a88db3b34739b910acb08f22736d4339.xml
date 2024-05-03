@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/* Example Script  (function() {          //step1: access the input variables         if (input && input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group/>
+        <ignore>false</ignore>
+        <is_conditional>false</is_conditional>
+        <name>TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0</name>
+        <order>190</order>
+        <source_sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 18:11:13</sys_created_on>
+        <sys_id>a88db3b34739b910acb08f22736d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_a88db3b34739b910acb08f22736d4339</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:11:13</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="cmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0">648dff734739b910acb08f22736d436d</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>8f3db847db8a9d508aea21c4059619e6</instance_id>
+        <instance_name>dev136818</instance_name>
+        <name>sys_rte_eb_entity_mapping_a88db3b34739b910acb08f22736d4339</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/* Example Script  (function() {          //step1: access the input variables         if (input &amp;&amp; input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group/&gt;&lt;ignore&gt;false&lt;/ignore&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0&lt;/name&gt;&lt;order&gt;190&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="temp.network_interfaces[*]"&gt;9749ba8f47032110acb08f22736d43d2&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erik.anderson&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-17 18:11:13&lt;/sys_created_on&gt;&lt;sys_id&gt;a88db3b34739b910acb08f22736d4339&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0&lt;/sys_name&gt;&lt;sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Example RTE Import (Single Column)"&gt;e649f68f47032110acb08f22736d43d2&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="Scheduled Job Demo"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_a88db3b34739b910acb08f22736d4339&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;erik.anderson&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-17 18:11:13&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="cmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0"&gt;648dff734739b910acb08f22736d436d&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>340932321</payload_hash>
+        <record_name>TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0</record_name>
+        <reverted_from/>
+        <source>b0e6fe8b47032110acb08f22736d430a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 18:11:13</sys_created_on>
+        <sys_id>208db3b34739b910acb08f22736d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b3ed5b0780000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:11:13</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>a48db3b36039b910bd5f52a5f44c8848</update_guid>
+        <update_guid_history>a48db3b36039b910bd5f52a5f44c8848:340932321,ac8db3b33239b91086f2160a24153e3a:-1566904822</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 18:22:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>8b2ad2e0c8f5454e88e329e843f1a731</sys_id>
+        <sys_metadata>a88db3b34739b910acb08f22736d4339</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TempTocmdb_ci_computer_1.cmdb_ci_network_adapter_1[*].cmdb_rel_ci_1697566273330_0</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_a88db3b34739b910acb08f22736d4339</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_a88db3b34739b910acb08f22736d4339">208db3b34739b910acb08f22736d4349</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:22:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

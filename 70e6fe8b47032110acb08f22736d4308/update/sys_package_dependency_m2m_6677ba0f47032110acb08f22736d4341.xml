@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">d8ef02e0f90211108c8bd16244dfe7d7</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-05-31 12:17:08</sys_created_on>
+        <sys_id>6677ba0f47032110acb08f22736d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-05-31 12:17:08</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

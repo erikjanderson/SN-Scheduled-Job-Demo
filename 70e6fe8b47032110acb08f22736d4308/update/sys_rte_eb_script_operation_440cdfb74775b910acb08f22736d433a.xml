@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_script_operation">
+    <sys_rte_eb_script_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script><![CDATA[/* Example Script
+(function(batch, output) {
+    for (var i = 0; i < batch.length; i++) {
+        
+        // step1: access the input variables
+        var a = batch[i].input;
+
+        // step2: your script code goes here
+        // based on the input variables assign variable 'b' to true or false.
+        var b = true; // or false;
+
+        // step3: set the output for each element
+        output[i] = b;
+    }
+})(batch, output);
+*/
+(function(batch, output) {
+    // add your code here
+    
+})(batch, output);]]></conditional_script>
+        <is_conditional>false</is_conditional>
+        <name>Script Operation - unrelated_table_static_id</name>
+        <operation_group/>
+        <order>800</order>
+        <script><![CDATA[(function(batch, output) {
+   for (var i = 0; i < batch.length; i++) {
+      var input = batch[i].input; 
+      output[i] = input
+   }
+})(batch, output);]]></script>
+        <source_sys_rte_eb_field display_value="unrelated_table_static_id">76e3604e47397110acb08f22736d43d1</source_sys_rte_eb_field>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_script_operation</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2023-10-17 15:44:49</sys_created_on>
+        <sys_id>440cdfb74775b910acb08f22736d433a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Script Operation - unrelated_table_static_id</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_script_operation_440cdfb74775b910acb08f22736d433a</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2023-10-17 15:45:07</sys_updated_on>
+        <target_sys_rte_eb_field display_value="unrelated_table_static_id_network_adater">400cdfb74775b910acb08f22736d4338</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Script Operation">941f88e273b333002b6265a751ab9e84</type>
+        <use_unique_input_sets>true</use_unique_input_sets>
+    </sys_rte_eb_script_operation>
+</record_update>

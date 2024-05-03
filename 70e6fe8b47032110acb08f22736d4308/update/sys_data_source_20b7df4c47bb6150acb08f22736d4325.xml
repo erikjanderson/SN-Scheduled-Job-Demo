@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_alias/>
+        <connection_override_last_success_time/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table, data_source, import_log, last_success_import_time) {
+
+
+    function getRoot(root) {
+        this.flattenedRoot = [];
+        var obj = {};
+        var id;
+        var network_adapters;
+        id = root.id;
+        obj.id = root.id;
+        obj.name = root.name;
+        obj.serial_number = root.serial_number;
+		obj.base_mac = root.base_mac;
+		obj.row_type = 'device';
+        network_adapters = root.network_adapters;
+        addObject(obj);
+        getNetwork_adaptersArray(network_adapters, id, obj.serial_number);
+        return flattenedRoot;
+    }
+
+
+    function getNetwork_adaptersArray(network_adaptersArray, id, serialNumber) {
+        if (network_adaptersArray && network_adaptersArray.length) {
+            for (var i = 0; i < network_adaptersArray.length; i++) {
+                var network_adapters = network_adaptersArray[i];
+                var obj = {};
+                obj.id = id;
+				//obj.serial_number = serialNumber;
+                obj.network_adapters_mac = network_adapters.mac;
+				obj.row_type = 'network_adapter';
+                addObject(obj);
+            }
+        }
+    }
+
+    function addObject(obj) {
+        var keys = Object.keys(obj);
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            if (obj[key] == undefined) {
+                delete obj[key];
+            }
+        }
+        flattenedRoot.push(obj);
+    }
+
+
+    function initializeColumns(import_set_table) {
+        import_set_table.addColumn("id", 40);
+        import_set_table.addColumn("name", 40);
+        import_set_table.addColumn("serial_number", 40);
+		import_set_table.addColumn("base_mac", 40);
+        import_set_table.addColumn("network_adapters_mac", 40);
+		import_set_table.addColumn("row_type", 40);
+    }
+
+
+    // import_set_table.addJSONColumn('data', 50000);
+    initializeColumns(import_set_table);
+    var array = [{
+            "id": "123",
+            "name": "Computer 1",
+            "serial_number": "SN123",
+			"base_mac": "93:34:0E:12:97:2D",
+            "network_adapters": [{
+                    "mac": "13:E2:65:30:10:B7"
+                },
+                {
+                    "mac": "A6:F2:85:BB:01:41"
+                }
+            ]
+        },
+        {
+            "id": "321",
+            "name": "Computer 2",
+            "serial_number": "SN321",
+			"base_mac": "B2:A8:44:26:6D:2E",
+            "network_adapters": [{
+                    "mac": "B2:A8:44:26:6D:2E"
+                },
+                {
+                    "mac": "F1:F1:E8:CA:B4:90"
+                }
+            ]
+        },
+		{
+			"id": "456",
+			"name": "ip-10-10-0-124",
+			"serial_number": "SN456",
+			"base_mac": "B2:A8:44:26:6D:2A"
+		}
+    ];
+
+    for (var i = 0; i < array.length; i++) {
+        var obj = array[i];
+        var flatStuff = getRoot(obj);
+		//gs.info("TEST: " + JSON.stringify(flatStuff));
+        for (var o = 0; o < flatStuff.length; o++){
+			var flatObj = flatStuff[o];
+			import_set_table.insert(flatObj);
+		}
+            
+    }
+
+
+
+
+
+})(import_set_table, data_source, import_log, last_success_import_time);]]></data_loader>
+        <data_stream_action/>
+        <data_stream_action_inputs/>
+        <data_stream_connection_alias/>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Staging: Example Data Import (Multi Col)</import_set_table_label>
+        <import_set_table_name>x_156954_sch_job_d_staging_example_data_import_multi_col</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time>2023-08-16 07:00:05</last_success_import_time>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>Example Data Source (Multi Column)</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-28 13:44:37</sys_created_on>
+        <sys_id>20b7df4c47bb6150acb08f22736d4325</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name>Example Data Source (Multi Column)</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_data_source_20b7df4c47bb6150acb08f22736d4325</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-08-16 07:00:05</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+    <sys_variable_value action="delete_multiple" query="document_key=20b7df4c47bb6150acb08f22736d4325"/>
+</record_update>
