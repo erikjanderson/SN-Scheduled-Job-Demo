@@ -18,6 +18,8 @@
 		{
 			"name": "Computer A",
 			"serial_number": "SNA",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "9A:63:01:5C:D7:BE",
@@ -32,6 +34,8 @@
 		{
 			"name": "Computer B",
 			"serial_number": "SNB",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "8F:A7:3F:D9:6B:17",
@@ -46,6 +50,8 @@
 		{
 			"name": "Computer C",
 			"serial_number": "SNC",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "B7:60:7C:8C:44:68",
@@ -60,6 +66,8 @@
 		{
 			"name": "Computer D",
 			"serial_number": "SND",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "C4:5C:EF:C2:A1:00",
@@ -103,7 +111,7 @@
         <jpath_root_node/>
         <last_run_database_field/>
         <last_run_datetime/>
-        <last_success_import_time>2023-10-31 07:00:07</last_success_import_time>
+        <last_success_import_time>2024-06-10 07:00:01</last_success_import_time>
         <ldap_target/>
         <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
         <limit/>
@@ -127,6 +135,7 @@
         <scp_port/>
         <scp_server/>
         <scp_user_name/>
+        <sheet_name/>
         <sheet_number>0</sheet_number>
         <sql_statement/>
         <ssh_keyfile_path/>
@@ -135,14 +144,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:15:53</sys_created_on>
         <sys_id>b107720f47032110acb08f22736d4349</sys_id>
-        <sys_mod_count>1396</sys_mod_count>
+        <sys_mod_count>1442</sys_mod_count>
         <sys_name>Example Data Source (Single Column)</sys_name>
         <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_data_source_b107720f47032110acb08f22736d4349</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-10-31 07:00:07</sys_updated_on>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2024-06-10 07:00:01</sys_updated_on>
         <table_name/>
         <type>CUSTOM</type>
         <use_batch_import>false</use_batch_import>

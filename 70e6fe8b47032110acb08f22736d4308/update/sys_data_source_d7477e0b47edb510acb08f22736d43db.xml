@@ -46,7 +46,7 @@
         <jpath_root_node/>
         <last_run_database_field/>
         <last_run_datetime/>
-        <last_success_import_time>2023-10-02 18:56:59</last_success_import_time>
+        <last_success_import_time>2024-06-10 07:00:02</last_success_import_time>
         <ldap_target/>
         <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
         <limit/>
@@ -70,22 +70,23 @@
         <scp_port/>
         <scp_server/>
         <scp_user_name/>
+        <sheet_name/>
         <sheet_number>0</sheet_number>
         <sql_statement/>
         <ssh_keyfile_path/>
         <support_pagination>false</support_pagination>
         <sys_class_name>sys_data_source</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-02 18:53:37</sys_created_on>
         <sys_id>d7477e0b47edb510acb08f22736d43db</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>119</sys_mod_count>
         <sys_name>Example Sensor Import</sys_name>
         <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_data_source_d7477e0b47edb510acb08f22736d43db</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-10-02 18:56:59</sys_updated_on>
+        <sys_updated_on>2024-06-10 07:00:02</sys_updated_on>
         <table_name/>
         <type>CUSTOM</type>
         <use_batch_import>false</use_batch_import>

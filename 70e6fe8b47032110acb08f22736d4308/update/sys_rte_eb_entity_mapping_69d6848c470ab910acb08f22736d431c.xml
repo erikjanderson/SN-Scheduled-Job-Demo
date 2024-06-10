@@ -9,7 +9,7 @@
         <order>130</order>
         <source_sys_rte_eb_entity display_value="temp">5749ba8f47032110acb08f22736d4369</source_sys_rte_eb_entity>
         <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-17 18:51:58</sys_created_on>
         <sys_id>69d6848c470ab910acb08f22736d431c</sys_id>
         <sys_mod_count>4</sys_mod_count>
@@ -19,7 +19,7 @@
         <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-01 15:39:40</sys_updated_on>
         <target_sys_rte_eb_entity display_value="Computer 2">25d6848c470ab910acb08f22736d4319</target_sys_rte_eb_entity>
     </sys_rte_eb_entity_mapping>

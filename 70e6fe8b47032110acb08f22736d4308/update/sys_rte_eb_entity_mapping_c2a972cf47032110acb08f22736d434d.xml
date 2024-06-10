@@ -19,7 +19,7 @@
         <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_rte_eb_entity_mapping_c2a972cf47032110acb08f22736d434d</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-17 16:29:43</sys_updated_on>
         <target_sys_rte_eb_entity display_value="Computer 1">0ea972cf47032110acb08f22736d434a</target_sys_rte_eb_entity>
     </sys_rte_eb_entity_mapping>
