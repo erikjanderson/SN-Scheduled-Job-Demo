@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="DELETE">
+        <field>parent</field>
+        <name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 18:53:17</sys_created_on>
+        <sys_id>fc270c8c470ab910acb08f22736d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0">38270c8c470ab910acb08f22736d4386</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_field_fc270c8c470ab910acb08f22736d4388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:53:17</sys_updated_on>
+    </sys_rte_eb_field>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>9e5639a31bca86d077c7cb7b234bcbb1</instance_id>
+        <instance_name>dev269897</instance_name>
+        <name>sys_rte_eb_field_fc270c8c470ab910acb08f22736d4388</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="INSERT_OR_UPDATE">
+        <field>parent</field>
+        <name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 18:53:17</sys_created_on>
+        <sys_id>fc270c8c470ab910acb08f22736d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0">38270c8c470ab910acb08f22736d4386</sys_rte_eb_entity>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_field_fc270c8c470ab910acb08f22736d4388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-17 18:53:17</sys_updated_on>
+    </sys_rte_eb_field>
+</record_update>]]></payload>
+        <payload_hash>1214487494</payload_hash>
+        <record_name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</record_name>
+        <reverted_from/>
+        <source>8a3553b083571210c2b8f0d6feaad3e3</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-01-22 13:30:06</sys_created_on>
+        <sys_id>4d4597b083571210c2b8f0d6feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948e34b5980000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-22 13:30:06</sys_updated_on>
+        <type>RTE Entity Field</type>
+        <update_guid>0d4597b04657121037ea584a0a4fd4ae</update_guid>
+        <update_guid_history>0d4597b04657121037ea584a0a4fd4ae:1214487494</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-09 12:38:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field">sys_rte_eb_field</sys_db_object>
+        <sys_id>b00c3665619a4708ae686dafec263310</sys_id>
+        <sys_metadata>fc270c8c470ab910acb08f22736d4388</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_computer_2.cmdb_ci_network_adapter_3[*].cmdb_rel_ci_1697568797249_0.parent</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_fc270c8c470ab910acb08f22736d4388</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_fc270c8c470ab910acb08f22736d4388">4d4597b083571210c2b8f0d6feaad3ae</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-09 12:38:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
