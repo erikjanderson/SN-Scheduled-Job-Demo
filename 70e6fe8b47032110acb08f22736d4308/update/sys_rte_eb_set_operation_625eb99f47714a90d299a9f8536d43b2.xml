@@ -30,7 +30,7 @@
         <source_sys_rte_eb_field/>
         <source_sys_rte_eb_fields/>
         <sys_class_name>sys_rte_eb_set_operation</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-01 15:49:52</sys_created_on>
         <sys_id>625eb99f47714a90d299a9f8536d43b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -41,7 +41,7 @@
         <sys_rte_eb_entity display_value="temp.network_interfaces[*]">9749ba8f47032110acb08f22736d43d2</sys_rte_eb_entity>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_rte_eb_set_operation_625eb99f47714a90d299a9f8536d43b2</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-01 15:49:52</sys_updated_on>
         <target_sys_rte_eb_field display_value="static_discovery_source">ae5ebd9b47714a90d299a9f8536d430b</target_sys_rte_eb_field>
         <target_sys_rte_eb_fields/>

@@ -206,58 +206,158 @@ function createNetworkAdapterM2Ms(unrelatedRecordSysId, networkAdapterSysIds){
 
 (function (input, runId) {
 
-    for (var r = 0; r < input.length; r++) {
+	//This function will take the IRE input and pre-process all of the batched items using the IdentifyCIEnhanced API allowing for to option to ignore or skip unwanted inserts / updates knowing what the end result will be with the IRE.
+	//
+	var strInput = input + "";
 
-        var row = input[r];
-        var netAdapterInternalId;
-        var parentDeviceInternalId;
-        var netAdapterRelatedM2MObj;
+	var inputCopy = JSON.parse(strInput);
+	//Concatenate all of the payloads from input into a single payload. This way we are only needing to submit a call to the IRE per batch.
+	var concatPayload = {
+		items: [],
+		relations: [],
+		referenceItems: []
+	};
+	var indexTrackerDictionary = {};
+	inputCopy.forEach((row, r) => {
+		row.payload.items.forEach((item, i) => {
+			concatPayload.items.push(item);
+			indexTrackerDictionary[concatPayload.items.length - 1] = {
+				"mainIndex": r,
+				"subIndex": i
+			};
+		});
+		if(concatPayload.relations && concatPayload.relations.length > 0){
+			concatPayload.relations = concatPayload.relations.concat(row.payload.relations);
+		}
+		if(concatPayload.referenceItems && concatPayload.referenceItems.length > 0){
+			concatPayload.referenceItems = concatPayload.referenceItems.concat(row.payload.referenceItems);
+		}
+	});
 
-        for (var i = 0; i < row.payload.items.length; i++) {
-            var item = row.payload.items[i];
 
-            if(i === 0){
-                parentDeviceInternalId = item.internal_id;
-            }
-            if (item.className === 'cmdb_ci_network_adapter') {
-                netAdapterInternalId = gs.generateGUID();
-                item.internal_id = netAdapterInternalId;
-            }
-        }
-        if(netAdapterInternalId && parentDeviceInternalId){
-        	row.payload.relations.push( {
-                "parent": -1,
-                "child": -1,
-                "parent_id": parentDeviceInternalId,
-                "child_id": netAdapterInternalId,
-                "type": "Owns::Owned by",
-                "sys_rel_source_info": {
-                    "source_feed": "Example RTE Import (Single Column)",
-                    "source_name": "SG-Example"
-                }
-            });
-        }
+	//Defaults
+	var options = {
+		"deduplicate_payloads": true,
+		"generate_summary": false,
+		"partial_commits": true,
+		"partial_payloads": true,
+		"skip_updating_last_scan_to_now": false,
+		"skip_updating_source_last_discovered_to_now": false
+	};
+	var concatPayloadStr = JSON.stringify(concatPayload);
+	var output = sn_cmdb.IdentificationEngine.identifyCIEnhanced("SG-example", concatPayloadStr, options);
+	if (!gs.nil(output)) {
+		var outputObj = JSON.parse(output);
+		outputObj.items.forEach(outputItem => {
 
-    }
+			var inputIndices = outputItem.inputIndices;
+			var operation = outputItem.operation;
+			var className = outputItem.className;
+			var sysId = outputItem.sysId;
+			inputIndices.forEach(inputIndex => {
+				if (concatPayload.items[inputIndex]) {
+					var inputItem = concatPayload.items[inputIndex];
+					if (gs.nil(inputItem.x_ire_identify_ci_output)) {
+						inputItem.x_ire_identify_ci_output = {};
+						inputItem.x_ire_identify_ci_output.inputIndices = [];
+					}
+					inputItem.x_ire_identify_ci_output.operation = operation;
+					inputItem.x_ire_identify_ci_output.sysId = sysId;
+					inputItem.x_ire_identify_ci_output.className = className;
+					inputItem.x_ire_identify_ci_output.inputIndices = inputIndices;
+				}
+			});
+		});
+	}
 
-})(input, runId);]]></before_script>
+	//Loop over array backwards as to not affect the index order which is tracked in a separate dictionary object.
+	for (var i = concatPayload.items.length - 1; i >= 0; i--) {
+		var item = concatPayload.items[i];
+		if (
+			item.x_ire_identify_ci_output &&
+			item.x_ire_identify_ci_output.operation.indexOf("INSERT") > -1
+		) {
+			var indexInfo = indexTrackerDictionary[i];
+			var rowIndex = indexInfo.mainIndex;
+			var itemIndex = indexInfo.subIndex;
+			if (input[rowIndex].payload.items[itemIndex]) {
+				var internalId = item.internal_id; 
+				//Mark ALL items realted to this item for removal which will be done later.
+				//markItemsForRemoval(internalId, input[rowIndex].payload.items);
+			}
+		}
+	}
+
+	for (var r = input.length - 1; r >= 0; r--) {
+		var row = input[r];
+		var payload = row.payload;
+		cleanseItems(payload.items, (function(item){
+			if (item.values && item.values.x_marked_for_removal) {
+				var internalId = item.internal_id;
+				cleanseItems(payload.relations, (function(relationItem, id){
+					return (relationItem.parent_id == id || relationItem.child_id == id);
+				}), internalId);
+				cleanseItems(payload.referenceItems, (function(referenceItem, id){
+					return (referenceItem.referenced == id || referenceItem.referencedBy == id);
+				}), internalId);
+				return true;
+			}else{
+				return false;
+			}
+		}));
+		//If a row has all ignored items, set the row to skipped to prevent errors
+		if (payload.items.length < 1) {
+			row.status = "SKIPPED";
+			row.reason = "Skipping because no items in the row were valid.";
+		}
+	}
+})(input, runId);
+
+
+function cleanseItems(arr, callback, optionalId){
+	var i = arr.length - 1;
+	while (i >= 0) {
+		var item = arr[i];
+		if(callback(item, optionalId)){
+			for (var j = i; j < arr.length - 1; j++) {
+				arr[j] = arr[j + 1];
+			}
+			arr.pop(); // Remove the last item
+		}
+		i--;
+	}
+}
+
+
+//Marks all items that are equial to or are sourced from an internal ID as marked for removal.
+function markItemsForRemoval(internalId, items){
+	if(gs.nil(items)){
+		return;
+	}
+	for(var i = 0; i < items.length; i++){
+		var item = items[i];
+		if(item.internal_id == internalId || item.internal_id.startsWith(internalId + "|||")){
+			item.values.x_marked_for_removal = true;
+		}
+	}
+}]]></before_script>
         <cmdb_inst_application display_value="Example RTE">a249ba8f47032110acb08f22736d4346</cmdb_inst_application>
         <description/>
-        <execute_after_script>true</execute_after_script>
-        <execute_before_script>false</execute_before_script>
+        <execute_after_script>false</execute_after_script>
+        <execute_before_script>true</execute_before_script>
         <name>Example RTE Import (Single Column)</name>
         <sys_class_name>cmdb_inst_application_feed</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:25:03</sys_created_on>
         <sys_data_source display_value="Example Data Source (Single Column)">b107720f47032110acb08f22736d4349</sys_data_source>
         <sys_id>e649f68f47032110acb08f22736d43d2</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>Example RTE Import (Single Column)</sys_name>
         <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>cmdb_inst_application_feed_e649f68f47032110acb08f22736d43d2</sys_update_name>
         <sys_updated_by>erik.anderson</sys_updated_by>
-        <sys_updated_on>2023-10-17 20:20:43</sys_updated_on>
+        <sys_updated_on>2025-04-08 16:23:50</sys_updated_on>
     </cmdb_inst_application_feed>
 </record_update>

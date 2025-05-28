@@ -33,7 +33,7 @@
         <pre_script/>
         <pre_script_bool>false</pre_script_bool>
         <record_source>regular</record_source>
-        <run_as display_value="Erik Anderson">79c7d06847331110c2b79a62736d4375</run_as>
+        <run_as display_value="Erik Anderson">cc5e796247900210d299a9f8536d4376</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -53,7 +53,7 @@
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>scheduled_import_set_f8f6fecb47032110acb08f22736d4377</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-07 14:46:50</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>

@@ -33,7 +33,7 @@
         <pre_script/>
         <pre_script_bool>false</pre_script_bool>
         <record_source>regular</record_source>
-        <run_as display_value="Erik Anderson">79c7d06847331110c2b79a62736d4375</run_as>
+        <run_as display_value="Erik Anderson">cc5e796247900210d299a9f8536d4376</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -44,7 +44,7 @@
         <show_connection_override>true</show_connection_override>
         <synchronize_inserts>true</synchronize_inserts>
         <sys_class_name>scheduled_import_set</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-13 19:36:05</sys_created_on>
         <sys_id>a98a232647f53510acb08f22736d4390</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -53,7 +53,7 @@
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>scheduled_import_set_a98a232647f53510acb08f22736d4390</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-13 19:36:10</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>

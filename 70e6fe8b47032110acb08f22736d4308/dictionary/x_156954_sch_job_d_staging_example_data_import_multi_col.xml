@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="85585b8c47bb6150acb08f22736d4350" extends="sys_import_set_row" label="Example Data Source (Multi Column)" max_length="40" name="x_156954_sch_job_d_staging_example_data_import_multi_col" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=base_mac" label="base_mac" max_length="40" name="u_base_mac" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=serial_number" label="serial_number" max_length="40" name="u_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=network_adapters_mac" label="network_adapters_mac" max_length="40" name="u_network_adapters_mac" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=row_type" label="row_type" max_length="40" name="u_row_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=serial_number" label="serial_number" max_length="40" name="u_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=base_mac" label="base_mac" max_length="40" name="u_base_mac" type="string"/>
     </element>
 </database>

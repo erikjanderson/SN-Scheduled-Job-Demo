@@ -18,57 +18,65 @@
 		{
 			"name": "Computer A",
 			"serial_number": "SNA",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "9A:63:01:5C:D7:BE",
 					"ip_address": "170.62.122.143"
+				},
+				{
+					"mac": "49:05:7A:87:C2:F8",
+					"ip_address": "49.205.50.196"
 				}
-				// {
-				// 	"mac": "49:05:7A:87:C2:F8",
-				// 	"ip_address": "49.205.50.196"
-				// }
 			]
 		},
 		{
 			"name": "Computer B",
 			"serial_number": "SNB",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "8F:A7:3F:D9:6B:17",
 					"ip_address": "85.72.138.251"
+				},
+				{
+					"mac": "49:05:7A:87:C2:F8",
+					"ip_address": "49.205.50.196"
 				}
-				// {
-				// 	"mac": "49:05:7A:87:C2:F8",
-				// 	"ip_address": "49.205.50.196"
-				// }
 			]
 		},
 		{
 			"name": "Computer C",
 			"serial_number": "SNC",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "B7:60:7C:8C:44:68",
 					"ip_address": "112.146.144.18"
+				},
+				{
+					"mac": "49:05:7A:87:C2:F8",
+					"ip_address": "49.205.50.196"
 				}
-			// 	{
-			// 		"mac": "49:05:7A:87:C2:F8",
-			// 		"ip_address": "49.205.50.196"
-			// 	}
 			 ]
 		},
 		{
 			"name": "Computer D",
 			"serial_number": "SND",
+			"model": "Macbook Pro 2023",
+			"manufacturer": "Apple",
 			"network_interfaces": [
 				{
 					"mac": "C4:5C:EF:C2:A1:00",
 					"ip_address": "94.71.252.72"
+				},
+				{
+					"mac": "49:05:7A:87:C2:F8",
+					"ip_address": "49.205.50.196"
 				}
-				// {
-				// 	"mac": "49:05:7A:87:C2:F8",
-				// 	"ip_address": "49.205.50.196"
-				// }
 			]
 		}
 	];
@@ -88,6 +96,7 @@
         <database_name/>
         <database_port/>
         <discard_arrays>true</discard_arrays>
+        <enable_parallel_loading>false</enable_parallel_loading>
         <expand_node_children>false</expand_node_children>
         <file_path/>
         <file_retrieval_method>Attachment</file_retrieval_method>
@@ -103,7 +112,7 @@
         <jpath_root_node/>
         <last_run_database_field/>
         <last_run_datetime/>
-        <last_success_import_time>2023-10-31 07:00:07</last_success_import_time>
+        <last_success_import_time>2025-01-30 18:48:49</last_success_import_time>
         <ldap_target/>
         <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
         <limit/>
@@ -113,6 +122,7 @@
         <offset>0</offset>
         <oracle_port>1521</oracle_port>
         <oracle_sid>orcl</oracle_sid>
+        <parallel_loading_script/>
         <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
 // The function uses result variable to return parse result back. 
 (function(line,lineNumber,result) {
@@ -127,6 +137,7 @@
         <scp_port/>
         <scp_server/>
         <scp_user_name/>
+        <sheet_name/>
         <sheet_number>0</sheet_number>
         <sql_statement/>
         <ssh_keyfile_path/>
@@ -135,14 +146,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-31 12:15:53</sys_created_on>
         <sys_id>b107720f47032110acb08f22736d4349</sys_id>
-        <sys_mod_count>1396</sys_mod_count>
+        <sys_mod_count>1452</sys_mod_count>
         <sys_name>Example Data Source (Single Column)</sys_name>
         <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>sys_data_source_b107720f47032110acb08f22736d4349</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-10-31 07:00:07</sys_updated_on>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:48:49</sys_updated_on>
         <table_name/>
         <type>CUSTOM</type>
         <use_batch_import>false</use_batch_import>
@@ -152,4 +163,15 @@
         <zipped>false</zipped>
     </sys_data_source>
     <sys_variable_value action="delete_multiple" query="document_key=b107720f47032110acb08f22736d4349"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b107720f47032110acb08f22736d4349</id>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2025-01-29 15:54:37</sys_created_on>
+        <sys_id>12797b0f83db5210c2b8f0d6feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2025-01-29 15:54:37</sys_updated_on>
+        <table>sys_data_source</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

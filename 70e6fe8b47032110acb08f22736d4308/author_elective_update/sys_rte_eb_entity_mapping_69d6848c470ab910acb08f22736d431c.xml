@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[(function() {
+    if (((input.temp.name === 'test'))) {
+        return true;
+    }
+    return false;
+})();]]></condition_script>
+        <encoded_query>temp#name=test</encoded_query>
+        <entity_mapping_group>a1d6848c470ab910acb08f22736d4319</entity_mapping_group>
+        <ignore>true</ignore>
+        <is_conditional>true</is_conditional>
+        <name>tempToComputer 2</name>
+        <order>130</order>
+        <source_sys_rte_eb_entity display_value="temp">5749ba8f47032110acb08f22736d4369</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-17 18:51:58</sys_created_on>
+        <sys_id>69d6848c470ab910acb08f22736d431c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>tempToComputer 2</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Example RTE Import (Single Column)">e649f68f47032110acb08f22736d43d2</sys_rte_eb_definition>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c</sys_update_name>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2025-04-09 12:37:39</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="Computer 2">25d6848c470ab910acb08f22736d4319</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</application>
+        <file_path/>
+        <instance_id>9e5639a31bca86d077c7cb7b234bcbb1</instance_id>
+        <instance_name>dev269897</instance_name>
+        <name>sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[(function() {
+    if (((input.temp.name === 'test'))) {
+        return true;
+    }
+    return false;
+})();]]&gt;&lt;/condition_script&gt;&lt;encoded_query&gt;temp#name=test&lt;/encoded_query&gt;&lt;entity_mapping_group&gt;a1d6848c470ab910acb08f22736d4319&lt;/entity_mapping_group&gt;&lt;ignore&gt;true&lt;/ignore&gt;&lt;is_conditional&gt;true&lt;/is_conditional&gt;&lt;name&gt;tempToComputer 2&lt;/name&gt;&lt;order&gt;130&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="temp"&gt;5749ba8f47032110acb08f22736d4369&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-17 18:51:58&lt;/sys_created_on&gt;&lt;sys_id&gt;69d6848c470ab910acb08f22736d431c&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;tempToComputer 2&lt;/sys_name&gt;&lt;sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="Example RTE Import (Single Column)"&gt;e649f68f47032110acb08f22736d43d2&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="Scheduled Job Demo"&gt;70e6fe8b47032110acb08f22736d4308&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;erik.anderson&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-09 12:37:39&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="Computer 2"&gt;25d6848c470ab910acb08f22736d4319&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-694168841</payload_hash>
+        <record_name>tempToComputer 2</record_name>
+        <reverted_from/>
+        <source>a0c517f083571210c2b8f0d6feaad3ea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2025-04-09 12:37:40</sys_created_on>
+        <sys_id>63ab23e983f8ee10c2b8f0d6feaad345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1961a8e5e960000001</sys_recorded_at>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2025-04-09 12:37:40</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>a7ab23e9bbf8ee1029127c77a2665e44</update_guid>
+        <update_guid_history>a7ab23e9bbf8ee1029127c77a2665e44:-694168841,57d8c016f744a21079a7630a8ec0d038:-232141222,acc8c0166644a210524e77a289be4a4f:892778437,e5988016c944a210594777a05b4ca7bd:2136735456,b0580c925b44a210517598104888a60a:1890395710,289784924444a21074921d2cf00bc545:2136735456,c14748525f44a210efc193e79e9a1fe4:110637355,e227c052a344a210b5a57ea5e4c7f54c:2136735456,4ef604128744a210de820caae07e5019:-1193326407,e84557b06a571210379e5ec1bcf3fbb1:-299162346</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_on>2025-04-09 12:38:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>0b7fd2ca47714bfe8145574e0893ab04</sys_id>
+        <sys_metadata>69d6848c470ab910acb08f22736d431c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tempToComputer 2</sys_name>
+        <sys_package display_value="Scheduled Job Demo" source="x_156954_sch_job_d">70e6fe8b47032110acb08f22736d4308</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
+        <sys_scope_delete display_value="">1781717e76114668a6ec793f6b594110</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_69d6848c470ab910acb08f22736d431c">63ab23e983f8ee10c2b8f0d6feaad345</sys_update_version>
+        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_on>2025-04-09 12:38:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

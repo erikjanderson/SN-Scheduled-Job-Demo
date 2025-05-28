@@ -8,7 +8,7 @@
         <order>100</order>
         <referenced_field>u_hardware</referenced_field>
         <sys_class_name>cmdb_related_entry</sys_class_name>
-        <sys_created_by>erik.anderson</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-17 15:26:55</sys_created_on>
         <sys_id>b1e7df334775b910acb08f22736d43a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -17,7 +17,7 @@
         <sys_policy/>
         <sys_scope display_value="Scheduled Job Demo">70e6fe8b47032110acb08f22736d4308</sys_scope>
         <sys_update_name>cmdb_related_entry_b1e7df334775b910acb08f22736d43a0</sys_update_name>
-        <sys_updated_by>erik.anderson</sys_updated_by>
+        <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-17 15:26:55</sys_updated_on>
         <table>x_156954_sch_job_d_hardware_unrelated_table</table>
     </cmdb_related_entry>
